@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="out/ODD_Sonnets_Labe.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="out/ODD_Sonnets_Labe.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Sonnets de Louise Labé</title>
+            <author>
+               <persName xml:id="LL">
+                  <forename>Louise</forename>
+                  <surname>Labé</surname>
+               </persName>
+            </author>
+         </titleStmt>
+         <editionStmt>
+            <edition>Évaluation XML TEI - École Nationale des Chartes - Promotion 2023-2024</edition>
+            <respStmt>
+               <resp>Encodage</resp>
+               <persName xml:id="TB">
+                  <forename>Théo</forename>
+                  <surname>Burnel</surname>
+               </persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>Un repository GitHub avec fichier TEI, ODD et RNG</publisher>
+            <address>
+               <addrLine>https://github.com/</addrLine>
+            </address>
+            <date when-iso="2024-02">Février 2024</date>
+            <availability status="restricted">
+               <p>Dépôt GitHub privé</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblFull>
+               <titleStmt>
+                  <title>Sonnets de Louise Labé</title>
+                  <title>Issus de Œuvres de Louïze Labé (<ptr target="https://catalogue.bnf.fr/ark:/12148/cb307026779"/>)</title>
+                  <author ref="https://data.bnf.fr/fr/11910370/louise_labe/">
+                     <forename>Louis</forename>
+                     <surname>Labé</surname>
+                  </author>
+               </titleStmt>
+               <publicationStmt>
+                  <publisher>Librairie de J. de Tournes</publisher>
+                  <pubPlace>
+                     <address>
+                        <country key="FR"/>
+                        <settlement type="city">Lyon</settlement>
+                     </address>
+                  </pubPlace>
+                  <date when-iso="1555">1555</date>
+                  <distributor facs="https://gallica.bnf.fr/ark:/12148/btv1b86095588/f11.item.zoom#">
+                     Bibliothèque nationale de France
+                  </distributor>
+                  <availability>
+                     <licence target="https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica">
+                        Domaine public
+                     </licence>
+                  </availability>
+               </publicationStmt>
+            </biblFull>
+         </sourceDesc>
+      </fileDesc>
+      
+      <encodingDesc>
+         <projectDesc>
+            <p>Encodage réalisé dans le cadre du cours XML TEI du Master 2 TNAH</p>
+         </projectDesc>
+         <p>Cet encodage a été réalisé à partir de la numérisation disponible sur Gallica des sonnets de Louis Labé dans l'édition de J. de Tournes de 1555.
+            Elle ne propose que la transcription de quatre sonnets sur les vingt-quatre connus.
+            Le texte a été transcrit fidèlement, sans modernisation.</p>
+      </encodingDesc>
+      
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person age="30" xml:id="p01" role="coordinator">
+                  <persName xml:id="TB">
+                     <forename>Théo</forename>
+                     <surname>Burnel</surname>
+                  </persName>
+                  <affiliation>École des chartes</affiliation>
+               </person>
+               <person>
+                  <persName xml:id="LL">
+                     <forename>Louise</forename>
+                     <surname>Labé</surname>
+                  </persName>
+                  <note>Louise Labé est une poétesse française de la Renaissance, née vers 1524 à Lyon et décédée en 1566.
+                     Elle est surtout connue pour son recueil de poèmes intitulé "Œuvres de Louise Labé Lionnoize" publié en 1555.
+                     Labé était une figure atypique pour son époque, car elle était une femme lettrée et indépendante, s'engageant dans le monde intellectuel et artistique.
+                     Ses poèmes, souvent considérés comme des sonnets, explorent des thèmes tels que l'amour, la passion, et l'égalité entre les sexes.
+                     Labé a été saluée pour sa maîtrise de la langue et son audace dans l'expression de ses sentiments.
+                     Son œuvre a eu une influence significative sur la poésie lyrique de son temps et a contribué à élargir le rôle des femmes dans le domaine littéraire.</note>
+               </person>
+               <person>
+                  <persName xml:id="Am">Amour</persName>
+                  <note>Les sonnets décrivent l'influence de l'amour sur l'esprit, le rendant parfois irrationnel et extravagant.
+                     Labé y exprime les tourments de l'amour, décrivant comment l'amour peut être à la fois doux et amer, agréable et douloureux.
+                     Elle utilise des images poétiques pour évoquer les diverses facettes de cette passion complexe. 
+                  </note>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc>
+            <listPlace>
+               <place xml:id="Cr">
+                  <placeName>Cœur de Louise Labé</placeName>
+                  <note>Louise Labé aborde fréquemment le thème de son cœur dans ses poèmes, exprimant souvent les tourments et les émotions liés à l'amour.
+                     Dans ses écrits, elle utilise des métaphores, des images poétiques et des descriptions passionnées pour dépeindre les sentiments qui agitent son cœur. 
+                     C'est le lieu des émotions contradictoires associées à l'amour. 
+                  </note>
+               </place>
+               <place xml:id="Yx">
+                  <placeName>Les yeux et les larmes de Louis Labé</placeName>
+                  <note>Le thème des yeux et des larmes revient fréquemment dans les poèmes de Louise Labé, comme c'était courant dans la poésie lyrique de la Renaissance.
+                     Labé utilise ces images pour exprimer les émotions intenses liées à l'amour et à la passion. 
+                     Les yeux et les larmes deviennent le lieu exprimant la passion dévorante et de la souffrance associée à l'amour.
+                  </note>
+               </place>
+            </listPlace>
+         </settingDesc>
+      </profileDesc>
+   </teiHeader>
+   
+  <text>
+      <body>
+         <lg type="sonnet" n="1">
+            <head>Sonnet I</head>
+            <lg type="quatrain" n="1">
+               <l><note>A</note>O beaus <placeName xml:id="Yx">yeux</placeName> bruns, ô <placeName xml:id="Yx">regars</placeName> destournez,</l>
+               <l><note>B</note>O chaus soupirs, ô <placeName xml:id="Yx">larmes</placeName> espandues,</l>
+               <l><note>B</note>O noires nuits vainement atendues,</l>
+               <l><note>A</note>O jours luisans vainement retournez:</l>
+            </lg>
+            <lg type="quatrain" n="2">
+               <l><note>A</note>O tristes pleins, ô desirs obstinez,</l>
+               <l><note>B</note>O tems perdu, ô peines despendues,</l>
+               <l><note>B</note>O mile morts en mile rets tendues,</l>
+               <l><note>A</note>O pires maus contre <persName xml:id="LL">moi</persName> destinez.</l>
+            </lg>
+            <lg type="sizain">
+               <lg type="tercet" n="1">
+                  <l><note>A</note>O ris, ô front, cheveus, bras, mains &amp; doits:</l>
+                  <l><note>A</note>O lut pleintif, viole, archet &amp; vois:</l>
+                  <l><note>B</note>Tant de flambeaus pour ardre une <persName xml:id="LL">femelle</persName>!</l>
+               </lg>
+               <lg type="tercet" n="2">
+                  <l><note>A</note>De <persName xml:id="Am">toy</persName> me plein, que tant de feus portant,</l>
+                  <l><note>A</note>En tant d'endrois d'iceus mon <placeName xml:id="Cr">coeur</placeName> tatant,</l>
+                  <l><note>B</note>N'en est sur <persName xml:id="Am">toy</persName> volé quelque estincelle.</l>
+               </lg>
+            </lg>
+         </lg>
+         
+         <lg type="sonnet" n="2">
+            <head>Sonnet II</head>
+            <lg type="quatrain" n="1">
+               <l><note>A</note>O longs desirs, ô esperances vaînes</l>
+               <l><note>B</note>Tristes soupirs &amp; <placeName xml:id="Yx">larmes</placeName> coutumiers</l>
+               <l><note>B</note>A engendrer de <persName xml:id="LL">moy</persName> maintes rivieres,</l>
+               <l><note>A</note>Dont mes deux <placeName xml:id="Yx">yeux</placeName> sont sources &amp; fontaines:</l>
+            </lg>
+            <lg type="quatrain" n="2">
+               <l><note>A</note>O cruautez, ô durtez inhumaines,</l>
+               <l><note>B</note>Piteus <placeName xml:id="Yx">regars</placeName> des celestes lumieres:</l>
+               <l><note>B</note>Du <placeName xml:id="Cr">coeur</placeName> transi ô passions permieres,</l>
+               <l><note>A</note>Estimez <persName xml:id="Am">vous</persName> croire encore mes peines?</l>
+            </lg>
+            <lg type="sizain">
+               <lg type="tercet" n="1">
+                  <l><note>A</note>Qu'encor <persName xml:id="Am">Amour</persName> sur <persName xml:id="LL">moy</persName> son arc essaie,</l>
+                  <l><note>A</note>Que nouveaus feus <persName xml:id="LL">me</persName> gette &amp; nouveaus dards</l>
+                  <l><note>B</note>Qu'<persName xml:id="Am">il</persName> se despite, &amp; pis qu'<persName xml:id="Am">il</persName> pourra face:</l>
+               </lg>
+               <lg type="tercet" n="2">
+                  <l><note>A</note>Car <persName xml:id="LL">ie</persName> suis tant nauree en toutes pars,</l>
+                  <l><note>A</note>Que plus en <persName xml:id="LL">moy</persName> une nouvele plaie,</l>
+                  <l><note>B</note>Pour m'empirer ne pourroit trouver place.</l>
+               </lg>
+            </lg>
+         </lg>   
+         
+         <lg type="sonnet" n="3">
+            <head>Sonnet III</head>
+            <lg type="quatrain" n="1">
+               <l><note>A</note>Depuis qu'<persName xml:id="Am">Amour</persName> cruel empoisonna</l>
+               <l><note>B</note>Premierement de son feu ma <placeName xml:id="Cr">poitrine</placeName>,</l>
+               <l><note>B</note>Toujiours brulay de sa fureur divine,</l>
+               <l><note>A</note>Qui un seul iour mon <placeName xml:id="Cr">coeur</placeName> n'abandonna.</l>
+            </lg>
+            <lg type="quatrain" n="2">
+               <l><note>A</note>Quelque travail, dont assez me donna,</l>
+               <l><note>B</note>Quelque menasse &amp; procheine ruïne:</l>
+               <l><note>B</note>Quelque penser de mort qui tout termine,</l>
+               <l><note>A</note>De rien mon <placeName xml:id="Cr">coeur</placeName> ardent ne s'estonna.</l>
+            </lg>
+            <lg type="sizain">
+               <lg type="tercet" n="1">
+                  <l><note>A</note>Tant plus qu'<persName xml:id="Am">Amour</persName> nous vient fort assailir,</l>
+                  <l><note>A</note>Plus <persName xml:id="Am">il</persName> nous fait nos forces recueilir,</l>
+                  <l><note>B</note>Et toujours frais en ses combats fait estre:</l>
+               </lg>
+               <lg type="tercet" n="2">
+                  <l><note>A</note>Mais ce n'est pas qu'en rien nous favorise,</l>
+                  <l><note>A</note>Ciel qui les Dieus &amp; les hommes mesprise:</l>
+                  <l><note>B</note>Mais pour plus fort contre les fors paroitre.</l>
+               </lg>
+            </lg>
+         </lg>     
+         
+         <lg type="sonnet" n="4">
+            <head>Sonnet IV</head>
+            <lg type="quatrain" n="1">
+               <l><note>A</note>Clere <persName xml:id="Am">Venus</persName>, qui erres par les Cieux,</l>
+               <l><note>B</note>Entens <persName xml:id="LL">ma voix</persName> qui en pleins chantera,</l>
+               <l><note>B</note>Tant que ta face au haut du Ciel luira,</l>
+               <l><note>A</note>Son long travail &amp; souvi ennuieus.</l>
+            </lg>
+            <lg type="quatrain" n="2">
+               <l><note>A</note>Mon <placeName xml:id="Yx">oeil</placeName> veillant s'atendrira bien mieux,</l>
+               <l><note>B</note>Et plus de <placeName xml:id="Yx">pleurs</placeName> te voyant getera.</l>
+               <l><note>B</note>Mieux mon lit mol de <placeName xml:id="Yx">larmes</placeName> baignera,</l>
+               <l><note>A</note>De ses travaus voyant témoins tes <placeName xml:id="Yx">yeux</placeName>.</l>
+            </lg>
+            <lg type="sizain">
+               <lg type="tercet" n="1">
+                  <l><note>A</note>Donq des humaines sont les lassez esprits</l>
+                  <l><note>A</note>De dous repos &amp; de sommeil espris.</l>
+                  <l><note>B</note>I'endure mal tant que le <persName xml:id="Am">Soleil</persName> luit:</l>
+               </lg>
+               <lg type="tercet" n="2">
+                  <l><note>A</note>Et quand <persName xml:id="LL">ie</persName> suis quasi toute cassee,</l>
+                  <l><note>A</note>Et que me suis mise en mon lit lassee,</l>
+                  <l><note>B</note>Crier me faut mon mal toute la nuit.</l>
+               </lg>
+            </lg>
+         </lg>         
+      </body>
+  </text>
+</TEI>
